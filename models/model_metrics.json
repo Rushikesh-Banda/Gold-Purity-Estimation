@@ -1,0 +1,59 @@
+{
+  "dataset": "Synthetic/Simulated Sample Dataset for Academic Use",
+  "trained_at": "2026-10-06 17:06:39",
+  "random_state": 42,
+  "test_size": 0.2,
+  "records_loaded": 1200,
+  "records_used": 1200,
+  "train_rows": 960,
+  "test_rows": 240,
+  "feature_columns": [
+    "density",
+    "copper_percent",
+    "silver_percent",
+    "zinc_percent",
+    "nickel_percent",
+    "xrf_gold_reading",
+    "temperature",
+    "weight"
+  ],
+  "target_column": "purity",
+  "cleaning_report": {
+    "rows_in": 1200,
+    "duplicates_removed": 0,
+    "missing_target_removed": 0,
+    "invalid_rows_removed": 0,
+    "missing_feature_values_to_impute": 0,
+    "rows_out": 1200
+  },
+  "models": {
+    "Linear Regression": {
+      "mae": 0.695370308996568,
+      "mse": 0.9810531912946376,
+      "rmse": 0.9904812927534965,
+      "r2": 0.9978070124637776,
+      "cv_rmse_mean": 1.0386007629941056,
+      "cv_rmse_std": 0.1020724575205787
+    },
+    "Decision Tree Regressor": {
+      "mae": 1.2433276180062973,
+      "mse": 2.9979291731246804,
+      "rmse": 1.7314529081452608,
+      "r2": 0.9932986087100292,
+      "cv_rmse_mean": 1.770609166360979,
+      "cv_rmse_std": 0.1430237675913028
+    },
+    "Random Forest Regressor": {
+      "mae": 0.969641444830056,
+      "mse": 1.7806914942344951,
+      "rmse": 1.3344255296697882,
+      "r2": 0.9960195489017672,
+      "cv_rmse_mean": 1.398034690667533,
+      "cv_rmse_std": 0.12690176774470394
+    }
+  },
+  "selection_criterion": "lowest RMSE on the held-out test set (ties: higher R2)",
+  "best_model": "Linear Regression",
+  "best_model_by_cross_validation": "Linear Regression",
+  "disclaimer": "This application is an academic software simulation using sample/synthetic data. It is not a certified replacement for professional fire assay or XRF testing."
+}

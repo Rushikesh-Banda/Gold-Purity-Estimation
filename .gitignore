@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.idea/
+.vscode/
+# user-generated files
+data/prediction_history.csv
+outputs/reports/*.pdf

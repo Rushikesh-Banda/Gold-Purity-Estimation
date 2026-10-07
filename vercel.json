@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "public": true,
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/api/:path*", "destination": "https://gold-purity-estimation-api.onrender.com/api/:path*" },
+    { "source": "/graphs/:path*", "destination": "https://gold-purity-estimation-api.onrender.com/graphs/:path*" },
+    { "source": "/reports/:path*", "destination": "https://gold-purity-estimation-api.onrender.com/reports/:path*" }
+  ]
+}
